@@ -4,7 +4,7 @@ Feature: Validate the automation demo site
 Scenario: Set the first name
 When I fill the first name
 
-@D1 @all
+@D1
 Scenario: Set the last name
 When I fill the last name 
 
