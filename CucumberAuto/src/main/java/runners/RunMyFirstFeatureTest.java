@@ -11,7 +11,7 @@ plugin = {
 		"pretty", 
 		"html:target/cucumber-htmlreport", 
 		"json:target/cucumber-report.json",
-		"com.cucumber.listener.ExtentCucumberFormatter:target/ExtendReport.html"}, tags= {"@D1"})
+		"com.cucumber.listener.ExtentCucumberFormatter:target/ExtendReport.html"})
 
 public class RunMyFirstFeatureTest {
 
