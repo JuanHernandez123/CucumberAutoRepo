@@ -9,9 +9,11 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(monochrome=true, dryRun= false, strict = true, features = { "src/test/resources/featureFiles/"}, glue = "stepDefinitions/", 
 plugin = {
 		"pretty", 
-		"html:target/cucumber-htmlreport", 
-		"json:target/cucumber-report.json",
-		"com.cucumber.listener.ExtentCucumberFormatter:target/ExtendReport.html"})
+		//"html:target/cucumber-htmlreport", 
+		//"json:target/cucumber-report.json",
+		"html:cucumber-htmlreport", 
+		"json:cucumber-report.json",
+		"com.cucumber.listener.ExtentCucumberFormatter:target/ExtendReport.html"}, tags= {"@D1"})
 
 public class RunMyFirstFeatureTest {
 
